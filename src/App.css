@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family:"Century Gothic";
+}
+
+:root {
+  --primary-white: #ddd;
+  --primary-orange: rgba(226, 155, 24, 0.7);
+}
+
+/***************** Navbar **********************/
+.logo {
+  width: 50%;
+  margin-top: 5%;
+  transform: rotate(-10deg);
+}
+
+nav ul li {
+  text-transform: capitalize;
+}
+
+.navbar-nav > li > a {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  border-top: 0.087rem;
+  color: var(--primary-white) !important;
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 8rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-bottom: 0.002rem solid var(--primary-orange);
+  /*border-radius: 5pt;
+  transform: scale(1.5); */
+  color: var(--primary-orange) !important;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navbar-nav > li > a:hover {
+  border-bottom: 0.002rem solid var(--primary-orange);
+  /*border-radius: 5pt;
+  transform: scale(1.5); */
+  color: var(--primary-orange) !important;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navbar-nav > li > a.nav-link {
+  float: left;
+}
